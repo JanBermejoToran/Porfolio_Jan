@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jan Bermejo Toran | Portfolio</title>
+  <title>Jan Bermejo Toran | Cybersecurity Portfolio</title>
 
   <style>
+
     *{
       margin:0;
       padding:0;
@@ -26,20 +27,20 @@
       position:fixed;
       top:0;
       width:100%;
-      background:rgba(0,0,0,0.9);
+      background:rgba(0,0,0,0.92);
       backdrop-filter:blur(10px);
       display:flex;
       justify-content:space-between;
       align-items:center;
       padding:20px 10%;
       z-index:1000;
-      border-bottom:1px solid #222;
+      border-bottom:1px solid #111;
     }
 
     nav h1{
       font-size:1.2rem;
+      letter-spacing:3px;
       color:white;
-      letter-spacing:2px;
     }
 
     nav ul{
@@ -49,8 +50,8 @@
     }
 
     nav a{
+      color:#bdbdbd;
       text-decoration:none;
-      color:#ccc;
       transition:0.3s;
       font-size:0.95rem;
     }
@@ -70,34 +71,34 @@
       text-align:center;
       padding:20px;
       background:
-      radial-gradient(circle at top, #1a1a1a 0%, #050505 70%);
+      radial-gradient(circle at top, #151515 0%, #050505 70%);
     }
 
     .hero h2{
-      font-size:4rem;
-      margin-bottom:15px;
+      font-size:4.5rem;
       text-transform:uppercase;
-      letter-spacing:4px;
+      letter-spacing:5px;
+      margin-bottom:20px;
     }
 
     .hero span{
-      color:#999;
+      color:#888;
     }
 
     .hero p{
-      max-width:700px;
-      color:#bdbdbd;
-      font-size:1.1rem;
-      margin-bottom:30px;
+      max-width:800px;
+      color:#c7c7c7;
+      font-size:1.15rem;
+      margin-bottom:35px;
     }
 
     .btn{
-      padding:14px 30px;
+      padding:14px 32px;
       border:1px solid white;
       color:white;
       text-decoration:none;
+      border-radius:6px;
       transition:0.3s;
-      border-radius:5px;
     }
 
     .btn:hover{
@@ -105,14 +106,14 @@
       color:black;
     }
 
-    /* SECTIONS */
+    /* GENERAL */
 
     section{
       padding:100px 10%;
     }
 
     .title{
-      font-size:2.5rem;
+      font-size:2.7rem;
       margin-bottom:50px;
       position:relative;
       display:inline-block;
@@ -123,7 +124,7 @@
       position:absolute;
       left:0;
       bottom:-10px;
-      width:60%;
+      width:65%;
       height:2px;
       background:white;
     }
@@ -143,23 +144,28 @@
     }
 
     .about-box{
-      background:#111;
-      border:1px solid #222;
+      background:#0f0f0f;
+      border:1px solid #1d1d1d;
       padding:40px;
-      border-radius:10px;
+      border-radius:12px;
+    }
+
+    .about-box p{
+      margin-bottom:10px;
+      color:#c7c7c7;
     }
 
     /* SKILLS */
 
     .skills{
       display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
       gap:25px;
     }
 
     .skill{
-      background:#111;
-      border:1px solid #222;
+      background:#0f0f0f;
+      border:1px solid #1d1d1d;
       padding:30px;
       border-radius:10px;
       transition:0.3s;
@@ -171,11 +177,12 @@
     }
 
     .skill h3{
-      margin-bottom:10px;
+      margin-bottom:15px;
+      color:white;
     }
 
     .skill p{
-      color:#aaa;
+      color:#9f9f9f;
     }
 
     /* PROJECTS */
@@ -187,9 +194,9 @@
     }
 
     .project{
-      background:#0f0f0f;
-      border:1px solid #222;
-      border-radius:10px;
+      background:#0c0c0c;
+      border:1px solid #1c1c1c;
+      border-radius:12px;
       overflow:hidden;
       transition:0.3s;
     }
@@ -200,15 +207,15 @@
     }
 
     .project-content{
-      padding:25px;
+      padding:30px;
     }
 
     .project h3{
-      margin-bottom:10px;
+      margin-bottom:15px;
     }
 
     .project p{
-      color:#aaa;
+      color:#aaaaaa;
     }
 
     /* CONTACT */
@@ -218,23 +225,24 @@
     }
 
     .contact p{
-      color:#bbb;
+      color:#bdbdbd;
       margin-bottom:10px;
     }
 
     .socials{
-      margin-top:20px;
+      margin-top:30px;
       display:flex;
       justify-content:center;
       gap:20px;
+      flex-wrap:wrap;
     }
 
     .socials a{
       color:white;
       text-decoration:none;
       border:1px solid #333;
-      padding:12px 18px;
-      border-radius:5px;
+      padding:12px 22px;
+      border-radius:6px;
       transition:0.3s;
     }
 
@@ -248,22 +256,14 @@
     footer{
       text-align:center;
       padding:30px;
+      background:#020202;
       border-top:1px solid #111;
-      color:#777;
-      background:#030303;
+      color:#666;
     }
 
     /* RESPONSIVE */
 
     @media(max-width:900px){
-
-      .hero h2{
-        font-size:2.5rem;
-      }
-
-      .about{
-        grid-template-columns:1fr;
-      }
 
       nav{
         flex-direction:column;
@@ -274,9 +274,18 @@
         gap:15px;
       }
 
+      .hero h2{
+        font-size:2.8rem;
+      }
+
+      .about{
+        grid-template-columns:1fr;
+      }
+
     }
 
   </style>
+
 </head>
 
 <body>
@@ -284,6 +293,7 @@
   <!-- NAVBAR -->
 
   <nav>
+
     <h1>JAN BERMEJO</h1>
 
     <ul>
@@ -292,6 +302,7 @@
       <li><a href="#projects">Proyectos</a></li>
       <li><a href="#contact">Contacto</a></li>
     </ul>
+
   </nav>
 
   <!-- HERO -->
@@ -301,8 +312,9 @@
     <h2>Jan <span>Bermejo Toran</span></h2>
 
     <p>
-      Estudiante de informática de grado medio apasionado por la tecnología,
-      el desarrollo web y el aprendizaje constante.
+      Estudiante de informática especializado en ciberseguridad,
+      pentesting y sistemas. Apasionado por la seguridad ofensiva,
+      Linux y el aprendizaje constante.
     </p>
 
     <a href="#projects" class="btn">Ver proyectos</a>
@@ -318,28 +330,34 @@
     <div class="about">
 
       <div class="about-text">
+
         <p>
-          Soy estudiante de informática de grado medio con interés en el desarrollo web,
-          hardware, redes y programación. Me gusta aprender nuevas tecnologías y crear
-          proyectos para seguir mejorando mis habilidades.
+          Soy estudiante de informática de grado medio con gran interés
+          en la ciberseguridad y el hacking ético. Me gusta aprender sobre
+          seguridad ofensiva, redes, sistemas Linux y desarrollo de herramientas
+          para seguir mejorando mis conocimientos técnicos.
         </p>
 
         <br>
 
         <p>
-          Actualmente estoy ampliando conocimientos en HTML, CSS, JavaScript y sistemas
-          informáticos.
+          Actualmente practico con laboratorios virtuales, entornos Linux
+          y proyectos personales relacionados con pentesting y seguridad informática.
         </p>
+
       </div>
 
       <div class="about-box">
+
         <h3>Información</h3>
 
         <br>
 
         <p><strong>Nombre:</strong> Jan Bermejo Toran</p>
         <p><strong>Estudios:</strong> Informática Grado Medio</p>
-        <p><strong>Especialidad:</strong> Desarrollo Web y Sistemas</p>
+        <p><strong>Especialidad:</strong> Ciberseguridad & Sistemas</p>
+        <p><strong>Objetivo:</strong> Seguir creciendo en el mundo del pentesting y la seguridad informática.</p>
+
       </div>
 
     </div>
@@ -355,23 +373,45 @@
     <div class="skills">
 
       <div class="skill">
+        <h3>Ciberseguridad</h3>
+        <p>
+          Conocimientos básicos en pentesting, análisis de vulnerabilidades y hacking ético.
+        </p>
+      </div>
+
+      <div class="skill">
+        <h3>Arch y Kali Linux</h3>
+        <p>
+          Uso de herramientas orientadas a auditorías de seguridad y pruebas de penetración.
+        </p>
+      </div>
+
+      <div class="skill">
+        <h3>Python</h3>
+        <p>
+          Desarrollo de scripts básicos para automatización y análisis de red.
+        </p>
+      </div>
+
+      <div class="skill">
+        <h3>Linux</h3>
+        <p>
+          Administración básica de sistemas Linux y uso avanzado de terminal.
+        </p>
+      </div>
+
+      <div class="skill">
         <h3>HTML & CSS</h3>
-        <p>Diseño de páginas web modernas y responsive.</p>
-      </div>
-
-      <div class="skill">
-        <h3>JavaScript</h3>
-        <p>Conocimientos básicos de programación web interactiva.</p>
-      </div>
-
-      <div class="skill">
-        <h3>Hardware</h3>
-        <p>Montaje y mantenimiento de equipos informáticos.</p>
+        <p>
+          Creación de páginas web modernas y responsive.
+        </p>
       </div>
 
       <div class="skill">
         <h3>Redes</h3>
-        <p>Configuración básica de redes y sistemas.</p>
+        <p>
+          Configuración de redes locales y conocimientos básicos de seguridad de red.
+        </p>
       </div>
 
     </div>
@@ -389,21 +429,60 @@
       <div class="project">
         <div class="project-content">
           <h3>Portfolio Personal</h3>
-          <p>Diseño de un portfolio responsive utilizando HTML y CSS.</p>
+          <p>
+            Desarrollo de un portfolio moderno y responsive utilizando HTML y CSS
+            con temática enfocada en ciberseguridad.
+          </p>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-content">
+          <h3>Laboratorio de Pentesting</h3>
+          <p>
+            Creación de un entorno virtual con Kali Linux y máquinas vulnerables
+            para practicar hacking ético y análisis de vulnerabilidades.
+          </p>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-content">
+          <h3>Escáner de Puertos</h3>
+          <p>
+            Script desarrollado en Python para detectar puertos abiertos y servicios
+            activos dentro de una red local.
+          </p>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-content">
+          <h3>Servidor Linux Seguro</h3>
+          <p>
+            Configuración y securización básica de un servidor Linux utilizando
+            firewall y control de accesos.
+          </p>
         </div>
       </div>
 
       <div class="project">
         <div class="project-content">
           <h3>Proyecto de Redes</h3>
-          <p>Configuración y mantenimiento de una red local básica.</p>
+          <p>
+            Diseño y configuración de una red local aplicando medidas básicas
+            de seguridad informática.
+          </p>
         </div>
       </div>
 
       <div class="project">
         <div class="project-content">
-          <h3>Montaje de PC</h3>
-          <p>Montaje y optimización de ordenadores para prácticas.</p>
+          <h3>Auditoría WiFi</h3>
+          <p>
+            Prácticas educativas en entornos controlados para aprender análisis
+            y seguridad de redes inalámbricas.
+          </p>
         </div>
       </div>
 
@@ -417,12 +496,14 @@
 
     <h2 class="title">Contacto</h2>
 
-    <p>Email: tuemail@example.com</p>
-    <p>GitHub: github.com/tuusuario</p>
+    <p>Email: janbermejotoran@gmail.com</p>
+    <p>GitHub: github.com/janbermejotoran</p>
 
     <div class="socials">
+
       <a href="#">GitHub</a>
       <a href="#">LinkedIn</a>
+
     </div>
 
   </section>
@@ -430,7 +511,7 @@
   <!-- FOOTER -->
 
   <footer>
-    © 2026 - Jan Bermejo Toran
+    © 2026 - Jan Bermejo Toran | Cybersecurity Portfolio
   </footer>
 
 </body>
